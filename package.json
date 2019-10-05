@@ -4,8 +4,12 @@
     "lint": "standard",
     "builds": "webpack --module-bind 'js=babel' js/ClientApp.js public/bundle.js",
     "build": "webpack",
+    "predeploy": "npm run buildit",
+    "deploy": "gh-pages -d buildit",
+    "start": "react-scripts start",
+    "buildit": "react-scripts build",
     "watch": "webpack --watch",
-    "nycreport":"nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test"
+    "nycreport": "nyc --reporter=lcov --reporter=text --reporter=html --require babel-register --extension .jsx npm test"
   },
   "dependencies": {
     "axios": "0.16.1",
@@ -16,6 +20,7 @@
     "cors": "2.8.3",
     "eslint-config-standard": "^13.0.1",
     "express": "4.15.3",
+    "gh-pages": "^2.1.1",
     "lodash": "4.17.4",
     "nyc": "^14.1.1",
     "preact": "8.1.0",
@@ -78,9 +83,9 @@
   },
   "name": "complete-intro-to-react",
   "version": "3.0.0",
-  "description": "A Complete Intro to React workshop",
+  "description": "NetFlix Copy built in React and Node",
+  "homepage": "https://getsreerajnair.github.io/ReactFlix",
   "main": "server.js",
-  "repository": "git@github.com:btholt/complete-intro-to-react.git",
-  "author": "Brian Holt <btholt@gmail.com>",
+  "author": "Sreeraj Nair<sreeraj3545@gmail.com>",
   "license": "MIT"
 }

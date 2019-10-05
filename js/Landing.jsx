@@ -14,6 +14,7 @@ class Landing extends React.Component{
 	}
 	handleSearchtermEvent(event){
 		this.props.setSearchTerm(event.target.value)
+		
 	}
 	gotoSearch(event){
 		hashHistory.push('search')
