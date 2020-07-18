@@ -16,7 +16,7 @@
     "cors": "2.8.3",
     "eslint-config-standard": "^13.0.1",
     "express": "4.15.3",
-    "lodash": "4.17.4",
+    "lodash": "4.17.19",
     "nyc": "^14.1.1",
     "preact": "8.1.0",
     "preact-compat": "3.16.0",
